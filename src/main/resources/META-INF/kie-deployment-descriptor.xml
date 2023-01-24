@@ -34,7 +34,14 @@
             <name>gNotRadicadoInterna</name>
         </global>
     </globals>
-    <work-item-handlers/>
+    <work-item-handlers>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("1111", "111", "111", "111")</identifier>
+            <parameters/>
+            <name>Email</name>
+        </work-item-handler>
+    </work-item-handlers>
     <environment-entries/>
     <configurations/>
     <required-roles/>
