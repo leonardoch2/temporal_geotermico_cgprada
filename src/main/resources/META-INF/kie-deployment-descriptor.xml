@@ -17,9 +17,21 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier></identifier>
+            <identifier>"{   "to": "carlosgprada@gmail.com",   "from": "carlosgprada@gmail.com",   "subject": "Expediente Geotermico No Existe",   "body": "El Expediente #{expediente} no existe. No se puede continuar con el tramite.",   "bodyTemplate": "" }"</identifier>
             <parameters/>
-            <name></name>
+            <name>gNotErrorExpediente</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>"{   "to": "carlosgprada@gmail.com",   "from": "carlosgprada@gmail.com",   "subject": "Nueva Solicitud Geotermico Creada",   "body": "Se creo una nueva solicitud de exploracion del recurso Geotermico bajo el Radicado #{radicado} en el Expediente #{expediente}.",   "bodyTemplate": "" }"</identifier>
+            <parameters/>
+            <name>gNotRadicadoSolicitante</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>"{   "to": "carlosgprada@gmail.com",   "from": "carlosgprada@gmail.com",   "subject": "Nueva Solicitud Geotermico Recibida",   "body": "Se recibio una nueva solicitud de exploracion del recurso Geotermico bajo el Radicado #{radicado} en el Expediente #{expediente}.",   "bodyTemplate": "" }"</identifier>
+            <parameters/>
+            <name>gNotRadicadoInterna</name>
         </global>
     </globals>
     <work-item-handlers/>
