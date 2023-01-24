@@ -9,25 +9,29 @@ public class SolicitudGeotermico implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Nombre Proyecto")
+	@org.kie.api.definition.type.Label("Nombre Proyecto")
 	private java.lang.String nombreProyecto;
 
-	@org.kie.api.definition.type.Label(value = "Descripcion Proyecto")
+	@org.kie.api.definition.type.Label("Descripcion Proyecto")
 	private java.lang.String descripcionProyecto;
 
-	@org.kie.api.definition.type.Label(value = "Nombre del Area")
+	@org.kie.api.definition.type.Label("Nombre del Area")
 	private java.lang.String nombreArea;
 
-	@org.kie.api.definition.type.Label(value = "Existe Superposicion?")
+	@org.kie.api.definition.type.Label("Existe Superposicion?")
 	private java.lang.Boolean existeSuperposicion;
 
+	@org.kie.api.definition.type.Label("Solicitante")
 	@javax.persistence.ManyToOne(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Solicitante")
 	private co.gov.minenergia.jbpm.data.Persona solicitante;
 
+	@org.kie.api.definition.type.Label("Secundarios")
 	@javax.persistence.OneToMany(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Secundarios")
 	private java.util.List<co.gov.minenergia.jbpm.data.Persona> secundarios;
+
+	@javax.persistence.OneToMany(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
+	@org.kie.api.definition.type.Label(value = "Area de Influencia")
+	private java.util.List<co.gov.minenergia.jbpm.data.Locacion> areaInfluencia;
 
 	public SolicitudGeotermico() {
 	}
@@ -81,17 +85,28 @@ public class SolicitudGeotermico implements java.io.Serializable {
 		this.secundarios = secundarios;
 	}
 
+	public java.util.List<co.gov.minenergia.jbpm.data.Locacion> getAreaInfluencia() {
+		return this.areaInfluencia;
+	}
+
+	public void setAreaInfluencia(
+			java.util.List<co.gov.minenergia.jbpm.data.Locacion> areaInfluencia) {
+		this.areaInfluencia = areaInfluencia;
+	}
+
 	public SolicitudGeotermico(java.lang.String nombreProyecto,
 			java.lang.String descripcionProyecto, java.lang.String nombreArea,
 			java.lang.Boolean existeSuperposicion,
 			co.gov.minenergia.jbpm.data.Persona solicitante,
-			java.util.List<co.gov.minenergia.jbpm.data.Persona> secundarios) {
+			java.util.List<co.gov.minenergia.jbpm.data.Persona> secundarios,
+			java.util.List<co.gov.minenergia.jbpm.data.Locacion> areaInfluencia) {
 		this.nombreProyecto = nombreProyecto;
 		this.descripcionProyecto = descripcionProyecto;
 		this.nombreArea = nombreArea;
 		this.existeSuperposicion = existeSuperposicion;
 		this.solicitante = solicitante;
 		this.secundarios = secundarios;
+		this.areaInfluencia = areaInfluencia;
 	}
 
 }
