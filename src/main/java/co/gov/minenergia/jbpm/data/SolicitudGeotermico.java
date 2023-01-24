@@ -29,9 +29,15 @@ public class SolicitudGeotermico implements java.io.Serializable {
 	@javax.persistence.OneToMany(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
 	private java.util.List<co.gov.minenergia.jbpm.data.Persona> secundarios;
 
+	@org.kie.api.definition.type.Label("Area de Influencia")
 	@javax.persistence.OneToMany(cascade = {javax.persistence.CascadeType.ALL}, fetch = javax.persistence.FetchType.EAGER)
-	@org.kie.api.definition.type.Label(value = "Area de Influencia")
 	private java.util.List<co.gov.minenergia.jbpm.data.Locacion> areaInfluencia;
+
+	@org.kie.api.definition.type.Label(value = "Numero de Expediente")
+	private java.lang.String numeroExpediente;
+
+	@org.kie.api.definition.type.Label(value = "Radicado Solicitud")
+	private java.lang.String radicado;
 
 	public SolicitudGeotermico() {
 	}
@@ -94,12 +100,31 @@ public class SolicitudGeotermico implements java.io.Serializable {
 		this.areaInfluencia = areaInfluencia;
 	}
 
-	public SolicitudGeotermico(java.lang.String nombreProyecto,
-			java.lang.String descripcionProyecto, java.lang.String nombreArea,
+	public java.lang.String getNumeroExpediente() {
+		return this.numeroExpediente;
+	}
+
+	public void setNumeroExpediente(java.lang.String numeroExpediente) {
+		this.numeroExpediente = numeroExpediente;
+	}
+
+	public java.lang.String getRadicado() {
+		return this.radicado;
+	}
+
+	public void setRadicado(java.lang.String radicado) {
+		this.radicado = radicado;
+	}
+
+	public SolicitudGeotermico(
+			java.lang.String nombreProyecto,
+			java.lang.String descripcionProyecto,
+			java.lang.String nombreArea,
 			java.lang.Boolean existeSuperposicion,
 			co.gov.minenergia.jbpm.data.Persona solicitante,
 			java.util.List<co.gov.minenergia.jbpm.data.Persona> secundarios,
-			java.util.List<co.gov.minenergia.jbpm.data.Locacion> areaInfluencia) {
+			java.util.List<co.gov.minenergia.jbpm.data.Locacion> areaInfluencia,
+			java.lang.String numeroExpediente, java.lang.String radicado) {
 		this.nombreProyecto = nombreProyecto;
 		this.descripcionProyecto = descripcionProyecto;
 		this.nombreArea = nombreArea;
@@ -107,6 +132,8 @@ public class SolicitudGeotermico implements java.io.Serializable {
 		this.solicitante = solicitante;
 		this.secundarios = secundarios;
 		this.areaInfluencia = areaInfluencia;
+		this.numeroExpediente = numeroExpediente;
+		this.radicado = radicado;
 	}
 
 }
