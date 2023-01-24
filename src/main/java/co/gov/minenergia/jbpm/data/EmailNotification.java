@@ -6,12 +6,70 @@ package co.gov.minenergia.jbpm.data;
 
 public class EmailNotification implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public EmailNotification() {
-    }
+	@org.kie.api.definition.type.Label(value = "To")
+	private java.lang.String to;
+	@org.kie.api.definition.type.Label(value = "From")
+	private java.lang.String from;
+	@org.kie.api.definition.type.Label(value = "Subject")
+	private java.lang.String subject;
+	@org.kie.api.definition.type.Label(value = "body")
+	private java.lang.String body;
+	@org.kie.api.definition.type.Label(value = "bodyTemplate")
+	private java.lang.String bodyTemplate;
 
+	public EmailNotification() {
+	}
 
+	public java.lang.String getTo() {
+		return this.to;
+	}
 
+	public void setTo(java.lang.String to) {
+		this.to = to;
+	}
+
+	public java.lang.String getFrom() {
+		return this.from;
+	}
+
+	public void setFrom(java.lang.String from) {
+		this.from = from;
+	}
+
+	public java.lang.String getSubject() {
+		return this.subject;
+	}
+
+	public void setSubject(java.lang.String subject) {
+		this.subject = subject;
+	}
+
+	public java.lang.String getBody() {
+		return this.body;
+	}
+
+	public void setBody(java.lang.String body) {
+		this.body = body;
+	}
+
+	public java.lang.String getBodyTemplate() {
+		return this.bodyTemplate;
+	}
+
+	public void setBodyTemplate(java.lang.String bodyTemplate) {
+		this.bodyTemplate = bodyTemplate;
+	}
+
+	public EmailNotification(java.lang.String to, java.lang.String from,
+			java.lang.String subject, java.lang.String body,
+			java.lang.String bodyTemplate) {
+		this.to = to;
+		this.from = from;
+		this.subject = subject;
+		this.body = body;
+		this.bodyTemplate = bodyTemplate;
+	}
 
 }
