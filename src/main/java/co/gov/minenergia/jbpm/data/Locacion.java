@@ -6,12 +6,36 @@ package co.gov.minenergia.jbpm.data;
 
 public class Locacion implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Locacion() {
-    }
+	@org.kie.api.definition.type.Label(value = "Departamento")
+	private java.lang.String idDepartamento;
+	@org.kie.api.definition.type.Label(value = "Municipio")
+	private java.lang.String idMunicipio;
 
+	public Locacion() {
+	}
 
+	public java.lang.String getIdDepartamento() {
+		return this.idDepartamento;
+	}
 
+	public void setIdDepartamento(java.lang.String idDepartamento) {
+		this.idDepartamento = idDepartamento;
+	}
+
+	public java.lang.String getIdMunicipio() {
+		return this.idMunicipio;
+	}
+
+	public void setIdMunicipio(java.lang.String idMunicipio) {
+		this.idMunicipio = idMunicipio;
+	}
+
+	public Locacion(java.lang.String idDepartamento,
+			java.lang.String idMunicipio) {
+		this.idDepartamento = idDepartamento;
+		this.idMunicipio = idMunicipio;
+	}
 
 }
