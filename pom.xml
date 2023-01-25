@@ -45,6 +45,12 @@
       <version>1.4.19</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>co.gov.mineneriga.jbpm.orfeo</groupId>
+      <artifactId>orfeo_integrations</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
