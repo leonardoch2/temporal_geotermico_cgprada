@@ -11,7 +11,7 @@
     <globals>
         <global>
             <resolver>mvel</resolver>
-            <identifier>"3106"</identifier>
+            <identifier>'3106'</identifier>
             <parameters/>
             <name>gDependencia</name>
         </global>
