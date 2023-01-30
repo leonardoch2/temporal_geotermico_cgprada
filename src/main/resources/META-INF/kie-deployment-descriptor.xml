@@ -49,7 +49,7 @@
             <resolver>mvel</resolver>
             <identifier>'5m'</identifier>
             <parameters/>
-            <name>gTimerControlOrfeo</name>
+            <name>gTimerEsperaOrfeo</name>
         </global>
     </globals>
     <work-item-handlers>
