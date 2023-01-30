@@ -45,6 +45,12 @@
             <parameters/>
             <name>gNotRadicadoInterna</name>
         </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>'5m'</identifier>
+            <parameters/>
+            <name>gTimerControlOrfeo</name>
+        </global>
     </globals>
     <work-item-handlers>
         <work-item-handler>
