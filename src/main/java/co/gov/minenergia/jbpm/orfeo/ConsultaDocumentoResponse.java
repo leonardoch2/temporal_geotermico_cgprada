@@ -1,4 +1,4 @@
-package co.gov.mineneriga.jbpm.orfeo;
+package co.gov.minenergia.jbpm.orfeo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -20,7 +20,7 @@ public class ConsultaDocumentoResponse implements java.io.Serializable {
 	@SerializedName(value = "Expediente")
 	private java.lang.String expediente;
 	@org.kie.api.definition.type.Label(value = "documentos")
-	private java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> documentos;
+	private java.util.List<co.gov.minenergia.jbpm.orfeo.OrfeoDocument> documentos;
 
 	public ConsultaDocumentoResponse() {
 	}
@@ -49,12 +49,12 @@ public class ConsultaDocumentoResponse implements java.io.Serializable {
 		this.expediente = expediente;
 	}
 
-	public java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> getDocumentos() {
+	public java.util.List<co.gov.minenergia.jbpm.orfeo.OrfeoDocument> getDocumentos() {
 		return this.documentos;
 	}
 
 	public void setDocumentos(
-			java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> documentos) {
+			java.util.List<co.gov.minenergia.jbpm.orfeo.OrfeoDocument> documentos) {
 		this.documentos = documentos;
 	}
 
@@ -62,7 +62,7 @@ public class ConsultaDocumentoResponse implements java.io.Serializable {
 			java.lang.Integer responseCode,
 			java.lang.String responseMessage,
 			java.lang.String expediente,
-			java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> documentos) {
+			java.util.List<co.gov.minenergia.jbpm.orfeo.OrfeoDocument> documentos) {
 		this.responseCode = responseCode;
 		this.responseMessage = responseMessage;
 		this.expediente = expediente;

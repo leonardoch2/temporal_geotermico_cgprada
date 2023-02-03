@@ -1,4 +1,4 @@
-package co.gov.mineneriga.jbpm.orfeo;
+package co.gov.minenergia.jbpm.orfeo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
