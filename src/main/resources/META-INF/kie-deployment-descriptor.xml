@@ -47,11 +47,11 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-             <identifier>'5m'</identifier>
+            <identifier>'5m'</identifier>
             <parameters/>
             <name>gTimerEsperaOrfeo</name>
         </global>
- 		<global>
+        <global>
             <resolver>mvel</resolver>
             <identifier>"https://argoqa.minenergia.gov.co/orfeo/restapi"</identifier>
             <parameters/>
@@ -76,6 +76,12 @@
             <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("smtp.gmail.com", "587", "carlosgprada@gmail.com", "wqkhafnkdxnopwpx", "true")</identifier>
             <parameters/>
             <name>Email</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler("", "")</identifier>
+            <parameters/>
+            <name>Rest</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
