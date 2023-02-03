@@ -23,7 +23,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'{   "resolucion": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Resolución decide permiso de exploración",     "incluirRadicado": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": false,     "esComunicacionSalida": false,     "esComunicacionInterna": false,     "esResolucion": true,     "esAuto": false,     "esActa": false   }    }'</identifier>
+            <identifier>'{   "resolucion": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Resolución decide permiso de exploración",     "incluirRadicados": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": false,     "esComunicacionSalida": false,     "esComunicacionInterna": false,     "esResolucion": true,     "esAuto": false,     "esActa": false   }    }'</identifier>
             <parameters/>
             <name>gDocGeotermico</name>
         </global>
