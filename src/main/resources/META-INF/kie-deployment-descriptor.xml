@@ -23,6 +23,12 @@
         </global>
         <global>
             <resolver>mvel</resolver>
+            <identifier>'{   "resolucion": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Resolución decide permiso de exploración",     "incluirRadicado": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": false,     "esComunicacionSalida": false,     "esComunicacionInterna": false,     "esResolucion": true,     "esAuto": false,     "esActa": false   }    }'</identifier>
+            <parameters/>
+            <name>gDocGeotermico</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
             <identifier>'{   "to": "carlosgprada@gmail.com",   "from": "carlosgprada@gmail.com",   "subject": "Expediente Geotermico No Existe",   "body": "El Expediente #{expediente} no existe. No se puede continuar con el tramite.",   "bodyTemplate": "" }'</identifier>
             <parameters/>
             <name>gNotErrorExpediente</name>
