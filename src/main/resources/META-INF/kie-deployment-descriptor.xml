@@ -89,6 +89,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new co.gov.minenergia.jbpm.wih.date.DateFromDurationWIH()</identifier>
+            <parameters/>
+            <name>DateFromDurationWIH</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
