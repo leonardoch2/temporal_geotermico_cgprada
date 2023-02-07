@@ -108,7 +108,21 @@
              "Result" : new StringDataType()
         ]
     ],
+     [
+        "name" : "DateFromDurationWIH",
+        "displayName" : "DateFromDurationWIH",
+        "defaultHandler" : "mvel: co.gov.minenergia.jbpm.wih.date.DateFromDurationWIH()",
+        "icon" : "defaultwebserviceicon.png",
 
+        "parameters" : [
+            "startDate" : new StringDataType(),
+            "duration" : new StringDataType(),
+            "businessDaysFlag" : new BooleanDataType()
+        ],
+        "results" : [
+             "resultDate" : new StringDataType()
+        ]
+    ],
     [
         "name" : "Log",
         "displayName" : "Log",
