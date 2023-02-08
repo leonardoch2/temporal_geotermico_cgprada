@@ -117,7 +117,7 @@
         "parameters" : [
             "startDate" : new StringDataType(),
             "duration" : new StringDataType(),
-            "businessDaysFlag" : new BooleanDataType()
+            "businessDaysFlag" : new StringDataType()
         ],
         "results" : [
              "resultDate" : new StringDataType()
