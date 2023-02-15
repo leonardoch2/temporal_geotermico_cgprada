@@ -108,7 +108,7 @@
              "Result" : new StringDataType()
         ]
     ],
-     [
+    [
         "name" : "DateFromDurationWIH",
         "displayName" : "DateFromDurationWIH",
         "defaultHandler" : "mvel: co.gov.minenergia.jbpm.wih.date.DateFromDurationWIH()",
@@ -121,6 +121,20 @@
         ],
         "results" : [
              "resultDate" : new StringDataType()
+        ]
+    ],
+    [
+        "name" : "CalculateBusinessDaysWIH",
+        "displayName" : "CalculateBusinessDaysWIH",
+        "defaultHandler" : "mvel: co.gov.minenergia.jbpm.wih.date.CalculateBusinessDaysWIH()",
+        "icon" : "defaultwebserviceicon.png",
+
+        "parameters" : [
+            "startDate" : new StringDataType(),
+            "endDate" : new StringDataType()
+        ],
+        "results" : [
+             "businessDays" : new IntegerDataType()
         ]
     ],
     [
