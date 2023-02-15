@@ -113,6 +113,12 @@
             <parameters/>
             <name>DateFromDurationWIH</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new co.gov.minenergia.jbpm.wih.date.CalculateBusinessDaysWIH()</identifier>
+            <parameters/>
+            <name>CalculateBusinessDaysWIH</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
