@@ -11,33 +11,9 @@
     <globals>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'{   "to": "",   "from": "carlosgprada@gmail.com",   "subject": "Permiso Exploracion Geotermico Aprobado",   "body": "Su solicitud de Exploracion del Recurso Geotermico asociada a el Radicado #{radicado} en el Expediente #{expediente} fue aprobada bajo la resolucion #{radicadoResolucion}. Ahora cuenta con un periodo de 30 dias para anexar las garantias correspondientes.",   "bodyTemplate": null }'</identifier>
-            <parameters/>
-            <name>gNotAprobacionPermisoSolicitante</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
             <identifier>'{   "resolucion": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Resolución decide permiso de exploración",     "incluirRadicados": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": false,     "esComunicacionSalida": false,     "esComunicacionInterna": false,     "esResolucion": true,     "esAuto": false,     "esActa": false   },   "notificacionResolucion": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Notificación",     "incluirRadicados": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": false,     "esComunicacionSalida": true,     "esComunicacionInterna": false,     "esResolucion": false,     "esAuto": false,     "esActa": false   },   "informeSeguimiento": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Informe de seguimiento",     "incluirRadicados": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": true,     "esComunicacionSalida": false,     "esComunicacionInterna": false,     "esResolucion": false,     "esAuto": false,     "esActa": false   },    "informeCierre": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Informe de cierre y abandono",     "incluirRadicados": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": true,     "esComunicacionSalida": false,     "esComunicacionInterna": false,     "esResolucion": false,     "esAuto": false,     "esActa": false   },    "solicitudInformacion": {     "tipoDocCodigo": "4",     "tipoDocNombre": "Solicitud de corrección o complemento de documentación",     "incluirRadicados": true,     "incluirAnexos": false,     "anexoExpediente": true,     "esComunicacionEntrada": false,     "esComunicacionSalida": true,     "esComunicacionInterna": false,     "esResolucion": false,     "esAuto": false,     "esActa": false   } }'</identifier>
             <parameters/>
             <name>gDocGeotermico</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
-            <identifier>'0,0,0,0,15,0'</identifier>
-            <parameters/>
-            <name>gTiempoEjecucion</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
-            <identifier>'{   "to": "carlosgprada@gmail.com",   "from": "carlosgprada@gmail.com",   "subject": "Nueva Solicitud Geotermico Recibida",   "body": "Se recibio una nueva solicitud de exploracion del recurso Geotermico bajo el Radicado #{radicado} en el Expediente #{expediente}.",   "bodyTemplate": "" }'</identifier>
-            <parameters/>
-            <name>gNotRadicadoInterna</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
-            <identifier>'5m'</identifier>
-            <parameters/>
-            <name>gTimerEsperaOrfeo</name>
         </global>
         <global>
             <resolver>mvel</resolver>
@@ -47,33 +23,27 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'{   "to": "carlosgprada@gmail.com",   "from": "carlosgprada@gmail.com",   "subject": "Expediente Geotermico No Existe",   "body": "El Expediente #{expediente} no existe. No se puede continuar con el tramite.",   "bodyTemplate": "" }'</identifier>
-            <parameters/>
-            <name>gNotErrorExpediente</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
             <identifier>'{   "notErrorExpediente": {     "to": "carlosgprada@gmail.com",     "from": "[Minminas JBPM]",     "subject": "Expediente Geotermico No Existe",     "body": "El Expediente #{expediente} no existe. No se puede continuar con el tramite.",     "bodyTemplate": null   },   "notRadicadoSolicitante": {     "to": "",     "from": "[Minminas JBPM]",     "subject": "Nueva Solicitud Geotérmico Creada",     "body": "Se creo una nueva solicitud de exploración del recurso Geotérmico bajo el Radicado #{radicado} en el Expediente #{expediente}.",     "bodyTemplate": null   },   "notRadicadoInterna": {     "to": "carlosgprada@gmail.com",     "from": "[Minminas JBPM]",     "subject": "Nueva Solicitud Geotérmico Recibida",     "body": "Se recibió una nueva solicitud de exploración del recurso Geotérmico bajo el Radicado #{radicado} en el Expediente #{expediente}.",     "bodyTemplate": null   },   "notNegacionPermisoSolicitante": {     "to": "",     "from": "[Minminas JBPM]",     "subject": "Permiso Exploración Geotermico Negado",     "body": "Su solicitud de Exploracion del Recurso Geotermico asociada a el Radicado #{radicado} en el Expediente #{expediente} fue denegada bajo la resolucion #{radicadoResolucion}. Recuerde que tiene un tiempo de 15 para interponer un Recurso de Reposición.",     "bodyTemplate": null   },   "notAprobacionPermisoSolicitante": {     "to": "",     "from": "[Minminas JBPM]",     "subject": "Permiso Exploración Geotérmico Aprobado",     "body": "Su solicitud de Exploración del Recurso Geotérmico asociada a el Radicado #{radicado} en el Expediente #{expediente} fue aprobada bajo la resolucion #{radicadoResolucion}. Ahora cuenta con un periodo de 30 dias para anexar las garantías correspondientes.",     "bodyTemplate": null   },   "notSolicitudInformacion": {     "to": "",     "from": "[Minminas JBPM]",     "subject": "Solicitud de Corrección o Complemento de Documentación",     "body": "Su tramite de solicitud de Exploración del Recurso Geotérmico identificada con el Radicado #{radicado} en el Expediente #{expediente} requiere de documentación o información adicional. Por favor consulte el documento identificado con el número #{radSolicitudInformacion} para mayor detalle. Recuerde que cuenta con un periodo de 20 días para anexar o complementar la información requerida.",     "bodyTemplate": null   } }'</identifier>
             <parameters/>
             <name>gNotificationConfig</name>
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'{   "to": "",   "from": "carlosgprada@gmail.com",   "subject": "Nueva Solicitud Geotermico Creada",   "body": "Se creo una nueva solicitud de exploracion del recurso Geotermico bajo el Radicado #{radicado} en el Expediente #{expediente}.",   "bodyTemplate": "" }'</identifier>
+            <identifier>'0,0,0,0,15,0'</identifier>
             <parameters/>
-            <name>gNotRadicadoSolicitante</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
-            <identifier>'{   "to": "",   "from": "carlosgprada@gmail.com",   "subject": "Permiso Exploracion Geotermico Negado",   "body": "Su solicitud de Exploracion del Recurso Geotermico asociada a el Radicado #{radicado} en el Expediente #{expediente} fue denegada bajo la resolucion #{radicadoResolucion}.",   "bodyTemplate": null }'</identifier>
-            <parameters/>
-            <name>gNotNegacionPermisoSolicitante</name>
+            <name>gTiempoEjecucion</name>
         </global>
         <global>
             <resolver>mvel</resolver>
             <identifier>'0,0,0,0,5,0'</identifier>
             <parameters/>
             <name>gTiempoSeguimiento</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>'5m'</identifier>
+            <parameters/>
+            <name>gTimerEsperaOrfeo</name>
         </global>
         <global>
             <resolver>mvel</resolver>
