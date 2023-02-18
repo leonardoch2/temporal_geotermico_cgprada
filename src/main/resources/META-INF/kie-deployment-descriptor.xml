@@ -17,6 +17,18 @@
         </global>
         <global>
             <resolver>mvel</resolver>
+            <identifier>'0,0,0,0,15,0'</identifier>
+            <parameters/>
+            <name>gTiempoEjecucion</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>'5m'</identifier>
+            <parameters/>
+            <name>gTimerEsperaOrfeo</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
             <identifier>'900'</identifier>
             <parameters/>
             <name>gDependencia</name>
@@ -29,21 +41,9 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'0,0,0,0,15,0'</identifier>
-            <parameters/>
-            <name>gTiempoEjecucion</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
             <identifier>'0,0,0,0,5,0'</identifier>
             <parameters/>
             <name>gTiempoSeguimiento</name>
-        </global>
-        <global>
-            <resolver>mvel</resolver>
-            <identifier>'5m'</identifier>
-            <parameters/>
-            <name>gTimerEsperaOrfeo</name>
         </global>
         <global>
             <resolver>mvel</resolver>
@@ -68,6 +68,12 @@
             <identifier>"ADMON"</identifier>
             <parameters/>
             <name>orfeoJbpmUser</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>'0,0,0,0,5,0'</identifier>
+            <parameters/>
+            <name>gTiempoAlertaVerficacion</name>
         </global>
         <global>
             <resolver>mvel</resolver>
