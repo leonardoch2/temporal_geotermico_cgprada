@@ -71,7 +71,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'0,0,0,0,5,0'</identifier>
+            <identifier>'0,0,0,0,3,0'</identifier>
             <parameters/>
             <name>gTiempoAlertaVerficacion</name>
         </global>
