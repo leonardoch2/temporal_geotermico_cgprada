@@ -138,6 +138,24 @@
         ]
     ],
     [
+        "name" : "CalculateEndAlarmDates",
+        "displayName" : "CalculateEndAlarmDates",
+        "defaultHandler" : "mvel: co.gov.minenergia.jbpm.wih.date.CalculateEndAlarmDates()",
+        "icon" : "defaultwebserviceicon.png",
+
+        "parameters" : [
+            "startDate" : new StringDataType(),
+            "requestDate" : new StringDataType(),
+            "durationEndDate" : new StringDataType(),
+            "durationAlarm" : new StringDataType(),
+            "businessDaysFlag" : new StringDataType(),
+        ],
+        "results" : [
+             "resultEndDate" : new IntegerDataType(),
+             "resultAlarmDate" : new IntegerDataType(),
+        ]
+    ],
+    [
         "name" : "Log",
         "displayName" : "Log",
         "icon" : "defaultlogicon.png",
