@@ -34,6 +34,18 @@ public class Document implements java.io.Serializable {
 	private co.gov.minenergia.jbpm.data.DocumentoConfig tipoDoc;
 
 	public Document() {
+	    
+	    this.numeroBorrador = null;
+	    this.numeroRadicado = null;
+	    this.usuarioCreaodor =  null;
+	    this.fechaCreacion = null;
+	    this.fechaExpediente = null;
+	    this.enviadoFlag = false;
+	    this.fechaEnvio = null;
+	    this.notificadoFlag = false;
+	    this.fechaNotificacion = null;
+	    this.tipoDoc = null;
+	    
 	}
 
 	public java.lang.String getNumeroBorrador() {
