@@ -71,6 +71,12 @@
         </global>
         <global>
             <resolver>mvel</resolver>
+            <identifier>'0,0,0,0,5,0'</identifier>
+            <parameters/>
+            <name>gTiempoGarantia</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
             <identifier>"ADMON"</identifier>
             <parameters/>
             <name>orfeoJbpmUser</name>
