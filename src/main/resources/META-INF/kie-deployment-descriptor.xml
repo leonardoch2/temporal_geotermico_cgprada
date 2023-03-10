@@ -53,6 +53,12 @@
         </global>
         <global>
             <resolver>mvel</resolver>
+            <identifier>4</identifier>
+            <parameters/>
+            <name>gEsperaOrfeoLimite</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
             <identifier>"https://argoqa.minenergia.gov.co/orfeo/restapi"</identifier>
             <parameters/>
             <name>orfeoBaseUrl</name>
