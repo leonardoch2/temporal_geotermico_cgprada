@@ -17,7 +17,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'0,0,0,0,15,0'</identifier>
+            <identifier>'0,0,0,0,5,0'</identifier>
             <parameters/>
             <name>gTiempoEjecucion</name>
         </global>
@@ -29,7 +29,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'0,0,0,0,10,0'</identifier>
+            <identifier>'0,0,0,0,2,0'</identifier>
             <parameters/>
             <name>gTiempoRecurso</name>
         </global>
@@ -47,7 +47,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'0,0,0,0,5,0'</identifier>
+            <identifier>'0,0,0,0,3,0'</identifier>
             <parameters/>
             <name>gTiempoSeguimiento</name>
         </global>
@@ -89,7 +89,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'0,0,10,0,0,0'</identifier>
+            <identifier>'0,0,0,0,5,0'</identifier>
             <parameters/>
             <name>gTiempoVerificacion</name>
         </global>
