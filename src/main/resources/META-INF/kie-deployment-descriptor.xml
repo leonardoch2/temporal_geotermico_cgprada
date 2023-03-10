@@ -23,7 +23,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'5m'</identifier>
+            <identifier>'2m'</identifier>
             <parameters/>
             <name>gTimerEsperaOrfeo</name>
         </global>
@@ -53,7 +53,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>4</identifier>
+            <identifier>2</identifier>
             <parameters/>
             <name>gEsperaOrfeoLimite</name>
         </global>
