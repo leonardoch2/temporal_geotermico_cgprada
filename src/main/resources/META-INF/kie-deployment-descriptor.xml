@@ -53,6 +53,12 @@
         </global>
         <global>
             <resolver>mvel</resolver>
+            <identifier>'@yopmail.com'</identifier>
+            <parameters/>
+            <name>gDominioCorreo</name>
+        </global>
+        <global>
+            <resolver>mvel</resolver>
             <identifier>'1'</identifier>
             <parameters/>
             <name>gEsperaOrfeoLimite</name>
